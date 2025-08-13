@@ -68,21 +68,114 @@
 /* VARIABLES */
 $padding-default: 3rem;
 
-.col5-unit{
-  @include grid-column(2.4); // (12/5 = 2.4)
+.col5-unit {
+    @include grid-column(2.4); // (12/5 = 2.4)
 }
 
 /* HTML ELEMENTS*/
 
+
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body#index {
+    background-color: hsla(27, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 28% 43%, hsla(28, 83%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 15% 84%, hsla(79, 92%, 63%, 1) 0px, transparent 50%),
+        radial-gradient(at 53% 6%, hsla(350, 96%, 66%, 1) 0px, transparent 50%),
+        radial-gradient(at 64% 9%, hsla(119, 97%, 72%, 1) 0px, transparent 50%),
+        radial-gradient(at 94% 54%, hsla(334, 66%, 68%, 1) 0px, transparent 50%),
+        radial-gradient(at 13% 41%, hsla(211, 69%, 71%, 1) 0px, transparent 50%),
+        radial-gradient(at 70% 56%, hsla(334, 62%, 72%, 1) 0px, transparent 50%);
+}
+
+body#archive-av {
+    background-color: hsla(123, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 73% 42%, hsla(90, 94%, 71%, 1) 0px, transparent 50%),
+        radial-gradient(at 56% 93%, hsla(105, 64%, 71%, 1) 0px, transparent 50%),
+        radial-gradient(at 84% 13%, hsla(251, 60%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 75% 46%, hsla(307, 87%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 22% 92%, hsla(128, 98%, 75%, 1) 0px, transparent 50%),
+        radial-gradient(at 74% 47%, hsla(352, 91%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 31% 61%, hsla(301, 90%, 78%, 1) 0px, transparent 50%);
+}
+
+body#archive-codigo {
+    background-color: hsla(177, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 30% 90%, hsla(147, 84%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 63% 47%, hsla(284, 88%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 7% 3%, hsla(159, 72%, 66%, 1) 0px, transparent 50%),
+        radial-gradient(at 24% 5%, hsla(170, 76%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 84% 97%, hsla(36, 69%, 63%, 1) 0px, transparent 50%),
+        radial-gradient(at 58% 63%, hsla(104, 80%, 72%, 1) 0px, transparent 50%),
+        radial-gradient(at 36% 34%, hsla(344, 91%, 71%, 1) 0px, transparent 50%);
+}
+
+body#archive-editorial {
+    background-color: hsla(106, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 65% 92%, hsla(48, 87%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 33% 75%, hsla(211, 96%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 98% 89%, hsla(321, 95%, 66%, 1) 0px, transparent 50%),
+        radial-gradient(at 52% 77%, hsla(24, 91%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 35% 89%, hsla(152, 84%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 51% 1%, hsla(15, 90%, 71%, 1) 0px, transparent 50%),
+        radial-gradient(at 12% 2%, hsla(337, 72%, 66%, 1) 0px, transparent 50%);
+}
+
+body#archive-visual {
+    background-color: hsla(269, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 65% 38%, hsla(157, 65%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 5% 3%, hsla(47, 73%, 65%, 1) 0px, transparent 50%),
+        radial-gradient(at 7% 42%, hsla(16, 70%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 53% 92%, hsla(10, 60%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 38% 12%, hsla(247, 76%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 77% 34%, hsla(237, 90%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 98% 93%, hsla(144, 88%, 70%, 1) 0px, transparent 50%);
+}
+
+body#archive-vivo {
+    background-color: hsla(47, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 97% 35%, hsla(354, 60%, 68%, 1) 0px, transparent 50%),
+        radial-gradient(at 97% 50%, hsla(310, 93%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 95% 16%, hsla(244, 61%, 61%, 1) 0px, transparent 50%),
+        radial-gradient(at 44% 13%, hsla(166, 74%, 70%, 1) 0px, transparent 50%),
+        radial-gradient(at 89% 84%, hsla(254, 71%, 70%, 1) 0px, transparent 50%),
+        radial-gradient(at 5% 76%, hsla(227, 87%, 67%, 1) 0px, transparent 50%),
+        radial-gradient(at 45% 15%, hsla(352, 85%, 76%, 1) 0px, transparent 50%);
+}
+body#single{
+    background-color:hsla(242,0%,100%,1);
+background-image:
+radial-gradient(at 34% 24%, hsla(14,68%,70%,1) 0px, transparent 50%),
+radial-gradient(at 56% 97%, hsla(22,96%,66%,1) 0px, transparent 50%),
+radial-gradient(at 85% 84%, hsla(312,87%,70%,1) 0px, transparent 50%),
+radial-gradient(at 59% 10%, hsla(34,62%,73%,1) 0px, transparent 50%),
+radial-gradient(at 60% 19%, hsla(191,75%,67%,1) 0px, transparent 50%),
+radial-gradient(at 85% 18%, hsla(133,62%,63%,1) 0px, transparent 50%),
+radial-gradient(at 69% 97%, hsla(322,88%,62%,1) 0px, transparent 50%);
+}
+
 h1 {
-    font-size: 25.5vw;
+    font-size: 3.5vw;
     text-transform: capitalize;
     letter-spacing: -1rem;
 }
-h2{
+
+h2 {
     font-size: 1rem;
 }
-h3{
+
+h3 {
     font-size: .8rem;
     text-transform: uppercase;
 }
@@ -98,214 +191,39 @@ h6 {
 }
 
 
-/* CURTAIN MENU */
+/* PAGES COMPONENTS */
 
-$curtain-menu-color: $primary-color;
-$curtain-menu-text-color: $white;
-$curtain-menu-font-size: 2rem;
-$curtain-menu-button-size: 3.5rem;
-
-.curtain-menu {
-    z-index: 2;
-    position: relative;
-    display: flex;
-    align-items: stretch;
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    pointer-events: none;
-}
-
-.curtain-menu-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: translateY(-100%);
-    transition: transform 0.5s;
-    transition-delay: 0.5s;
-    visibility: hidden;
-
-    .curtain-menu-list {
-        li {
-            width: 100%;
-            font-weight: 100;
-            font-size: $curtain-menu-font-size;
-            min-height: $curtain-menu-font-size;
-            padding: 1rem;
-            text-align: center;
-            justify-content: center;
-            transition: all 0.1s ease-in-out;
-            letter-spacing: -0.05rem;
-            text-transform: uppercase;
-            min-width: 100vw;
-
-            &:hover {
-                background: rgba($white, 0.7);
-
-                a {
-                    color: $curtain-menu-color;
-                }
-            }
-
-            a {
-                color: $curtain-menu-text-color;
-                justify-content: center;
-                transition: all .1s ease-in-out;
-            }
-        }
-    }
-}
-
-.curtain-menu .curtain {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: flex 0.75s;
-
-    &:nth-child(2) {
-        flex: 1 0 100%;
-        background: transparent;
-    }
-
-    &:nth-child(odd) {
-        background: darken($curtain-menu-color, 20%);
-    }
-}
-
-.curtain-menu-button {
-    position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
-    z-index: 5;
-}
-
-.curtain-menu-button-toggle {
-    width: $curtain-menu-button-size;
-    height: $curtain-menu-button-size;
-    border-radius: 5000px;
-    background: $curtain-menu-text-color;
-    position: relative;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-
-    div {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 26px;
-        height: 3px;
-        background: $curtain-menu-color;
-        transition: transform 0.15s;
-        transition-delay: 0.15s;
-    }
-
-    .bar1 {
-        transform: translateX(-50%)translateY(-50%)rotate(-90deg);
-    }
-
-    .bar2 {
-        transform: translateX(-50%)translateY(-50%)rotate(-180deg);
-    }
-
-    &:hover {
-        background: $curtain-menu-color;
-
-        div {
-            background: $curtain-menu-text-color;
-        }
-    }
-
-    &:active {
-        box-shadow: none;
-    }
-}
-
-.curtain-menu-open {
-    .curtain:nth-child(2) {
-        flex: 0 0 0%;
-    }
-
-    .curtain-menu-wrapper {
-        transform: translateY(0%);
-        visibility: visible;
-        pointer-events: all;
-    }
-
-    .curtain-menu-button-toggle {
-        .bar1 {
-            transform: translateX(-50%)translateY(-50%)rotate(-45deg);
-        }
-
-        .bar2 {
-            transform: translateX(-50%)translateY(-50%)rotate(-135deg);
-        }
-    }
-}
-
-/* HERO IMAGE */
-
-$hero-full-screen-bg: url('https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat;
-$hero-full-screen-bg-size: cover;
-$hero-full-screen-text-color: $white;
-
-.hero-full-screen {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background: $hero-full-screen-bg;
-    background-size: $hero-full-screen-bg-size;
-    top: 0;
-    position: absolute;
-    min-width: 100%;
-
-    .middle-content-section {
-        text-align: center;
-        color: $hero-full-screen-text-color;
-        min-height: 100vh;
-    }
-
-    .top-content-section {
-        width: 100%;
-    }
-
-    .bottom-content-section {
-        padding: 1rem;
-        position: absolute;
-        bottom: 40px;
-
-        svg {
-            height: rem-calc(60);
-            width: rem-calc(60);
-            fill: $hero-full-screen-text-color;
-        }
-    }
-}
-
-#intro-content{
-    p{
+#intro-content,
+#single-content {
+    p {
         font-size: 1.4rem;
-        margin: 2rem 0  ;
+        margin: 2rem 0;
         padding: 0;
     }
-}
-#main-content-section {
-    margin: $padding-default 0 $padding-default*2;
 
-    .index-content-item {
+    p.small {
+        font-size: .85rem;
+    }
+
+}
+
+#intro-content {
+    .description {
+        margin-bottom: 3rem;
+    }
+}
+
+#main-content-section {
+    margin: $padding-default 0;
+    position: absolute;
+    min-width: 100%;
+    top: 0;
+
+    .index-content-item,
+    .archive-content-item {
         height: 100%;
         display: block;
-        padding-bottom: 1rem;
+        margin-bottom: 1rem;
         border-radius: 5px;
         background: #ccc;
         transition: all .1s ease-in-out;
@@ -324,23 +242,54 @@ $hero-full-screen-text-color: $white;
     }
 
     .index-content-item:hover,
-    .index-content-item:focus {
+    .index-content-item:focus,
+    .archive-content-item:hover,
+    .archive-content-item:focus {
         img {
             opacity: 1;
         }
 
         background: #aaa;
     }
+
+    #related-content {
+        margin-top: 2rem;
+    }
+}
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+    li {
+        a {
+            text-decoration: underline;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: none;
+        }
+    }
 }
 
 /* FOOTER */
 
-footer{
-    border-top: 1px solid $medium-gray;
+footer {
+    border-top: 1px solid rgba(0, 0, 0, .4);
     padding-top: 1rem;
-    margin-bottom: 2rem;
-    h3{
+    margin: 6rem 0 2rem 0;
+
+    * {
+        font-size: 1rem !important;
+    }
+
+    h3 {
         margin: 0;
+    }
+
+    h3,
+    span.label {
         padding: .7rem 1rem;
+        border-radius: 5px;
     }
 }
