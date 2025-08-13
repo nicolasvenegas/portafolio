@@ -68,8 +68,17 @@
 /* VARIABLES */
 $padding-default: 3rem;
 
-.col5-unit {
-    @include grid-column(2.4); // (12/5 = 2.4)
+/* 5 COLUMNS GRID */
+
+@media screen and (max-width: 39.9375em) {
+    .col5-unit {
+        @include grid-column(6); 
+    }
+}
+@media screen and (min-width: 40em) {
+    .col5-unit {
+        @include grid-column(2.4); // (12/5 = 2.4)
+    }
 }
 
 /* HTML ELEMENTS*/
@@ -153,20 +162,21 @@ body#archive-vivo {
         radial-gradient(at 5% 76%, hsla(227, 87%, 67%, 1) 0px, transparent 50%),
         radial-gradient(at 45% 15%, hsla(352, 85%, 76%, 1) 0px, transparent 50%);
 }
-body#single{
-    background-color:hsla(242,0%,100%,1);
-background-image:
-radial-gradient(at 34% 24%, hsla(14,68%,70%,1) 0px, transparent 50%),
-radial-gradient(at 56% 97%, hsla(22,96%,66%,1) 0px, transparent 50%),
-radial-gradient(at 85% 84%, hsla(312,87%,70%,1) 0px, transparent 50%),
-radial-gradient(at 59% 10%, hsla(34,62%,73%,1) 0px, transparent 50%),
-radial-gradient(at 60% 19%, hsla(191,75%,67%,1) 0px, transparent 50%),
-radial-gradient(at 85% 18%, hsla(133,62%,63%,1) 0px, transparent 50%),
-radial-gradient(at 69% 97%, hsla(322,88%,62%,1) 0px, transparent 50%);
+
+body#single {
+    background-color: hsla(242, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 34% 24%, hsla(14, 68%, 70%, 1) 0px, transparent 50%),
+        radial-gradient(at 56% 97%, hsla(22, 96%, 66%, 1) 0px, transparent 50%),
+        radial-gradient(at 85% 84%, hsla(312, 87%, 70%, 1) 0px, transparent 50%),
+        radial-gradient(at 59% 10%, hsla(34, 62%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 60% 19%, hsla(191, 75%, 67%, 1) 0px, transparent 50%),
+        radial-gradient(at 85% 18%, hsla(133, 62%, 63%, 1) 0px, transparent 50%),
+        radial-gradient(at 69% 97%, hsla(322, 88%, 62%, 1) 0px, transparent 50%);
 }
 
 h1 {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     text-transform: capitalize;
     letter-spacing: -1rem;
 }
@@ -225,7 +235,7 @@ h6 {
         display: block;
         margin-bottom: 1rem;
         border-radius: 5px;
-        background: #ccc;
+        background: #rgba(255,255,255,0);
         transition: all .1s ease-in-out;
 
         img {
@@ -245,11 +255,10 @@ h6 {
     .index-content-item:focus,
     .archive-content-item:hover,
     .archive-content-item:focus {
+        background: rgba(255,255,255,1);
         img {
             opacity: 1;
         }
-
-        background: #aaa;
     }
 
     #related-content {
@@ -281,6 +290,7 @@ footer {
 
     * {
         font-size: 1rem !important;
+        line-height: 1.4;
     }
 
     h3 {
@@ -291,5 +301,13 @@ footer {
     span.label {
         padding: .7rem 1rem;
         border-radius: 5px;
+    }
+    
+    a{
+        text-decoration: underline !important;
+    }
+    
+    a:hover, a:focus{
+        text-decoration: none !important;
     }
 }
