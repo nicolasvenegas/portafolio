@@ -67,14 +67,16 @@
 
 /* VARIABLES */
 $padding-default: 3rem;
+$gris-medio: #777;
 
 /* 5 COLUMNS GRID */
 
 @media screen and (max-width: 39.9375em) {
     .col5-unit {
-        @include grid-column(6); 
+        @include grid-column(6);
     }
 }
+
 @media screen and (min-width: 40em) {
     .col5-unit {
         @include grid-column(2.4); // (12/5 = 2.4)
@@ -140,15 +142,16 @@ body#archive-editorial {
 }
 
 body#archive-visual {
-    background-color: hsla(269, 0%, 100%, 1);
-    background-image:
-        radial-gradient(at 65% 38%, hsla(157, 65%, 62%, 1) 0px, transparent 50%),
-        radial-gradient(at 5% 3%, hsla(47, 73%, 65%, 1) 0px, transparent 50%),
-        radial-gradient(at 7% 42%, hsla(16, 70%, 73%, 1) 0px, transparent 50%),
-        radial-gradient(at 53% 92%, hsla(10, 60%, 79%, 1) 0px, transparent 50%),
-        radial-gradient(at 38% 12%, hsla(247, 76%, 73%, 1) 0px, transparent 50%),
-        radial-gradient(at 77% 34%, hsla(237, 90%, 76%, 1) 0px, transparent 50%),
-        radial-gradient(at 98% 93%, hsla(144, 88%, 70%, 1) 0px, transparent 50%);
+    background: $gris-medio;
+    // background-color: hsla(269, 0%, 100%, 1);
+    // background-image:
+    //     radial-gradient(at 65% 38%, hsla(157, 65%, 62%, 1) 0px, transparent 50%),
+    //     radial-gradient(at 5% 3%, hsla(47, 73%, 65%, 1) 0px, transparent 50%),
+    //     radial-gradient(at 7% 42%, hsla(16, 70%, 73%, 1) 0px, transparent 50%),
+    //     radial-gradient(at 53% 92%, hsla(10, 60%, 79%, 1) 0px, transparent 50%),
+    //     radial-gradient(at 38% 12%, hsla(247, 76%, 73%, 1) 0px, transparent 50%),
+    //     radial-gradient(at 77% 34%, hsla(237, 90%, 76%, 1) 0px, transparent 50%),
+    //     radial-gradient(at 98% 93%, hsla(144, 88%, 70%, 1) 0px, transparent 50%);
 }
 
 body#archive-vivo {
@@ -200,6 +203,17 @@ h6 {
     letter-spacing: -0.025rem;
 }
 
+p {
+    a {
+        text-decoration: underline;
+    }
+
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+}
+
 
 /* PAGES COMPONENTS */
 
@@ -235,7 +249,7 @@ h6 {
         display: block;
         margin-bottom: 1rem;
         border-radius: 5px;
-        background: #rgba(255,255,255,0);
+        background: #rgba(255, 255, 255, 0);
         transition: all .1s ease-in-out;
 
         img {
@@ -255,7 +269,8 @@ h6 {
     .index-content-item:focus,
     .archive-content-item:hover,
     .archive-content-item:focus {
-        background: rgba(255,255,255,1);
+        background: rgba(255, 255, 255, 1);
+
         img {
             opacity: 1;
         }
@@ -265,6 +280,34 @@ h6 {
         margin-top: 2rem;
     }
 }
+
+/* MASONRY */
+
+.masonry-item {
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
+    font-weight: white;
+    color: white;
+    line-height: 1.5em;
+    // border-radius: 5px;
+    // background-image: linear-gradient(135deg, #F761A1 10%, #AC46C8 100%);
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+.masonry-item:hover, .masonry-item:focus{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* LIGHTBOX */
+
+.featherlight .featherlight-content{
+        background: $dark-gray;
+}
+.featherlight:last-of-type {
+  background: rgba(0,0,0,.9);
+}
+
 
 /* BREADCRUMBS */
 
@@ -302,12 +345,13 @@ footer {
         padding: .7rem 1rem;
         border-radius: 5px;
     }
-    
-    a{
+
+    a {
         text-decoration: underline !important;
     }
-    
-    a:hover, a:focus{
+
+    a:hover,
+    a:focus {
         text-decoration: none !important;
     }
 }

@@ -6,6 +6,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - Archivo - Vivo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css"
+    integrity="sha256-uJvNKReeecfthkBhNDLky4FXv742qoe4BgE9icJOePg=" crossorigin="anonymous">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -41,26 +46,36 @@
               <p>Residencia AAEE en torno a eventos naturales de la ciudad de Temuko</p>
               <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in sapien non turpis
                 ultrices congue. Duis nisi magna, laoreet id venenatis vitae, volutpat et enim. Suspendisse cursus
-                aliquet
-                quam eu blandit. Donec fermentum diam non libero maximus convallis. Aenean aliquet diam sapien, eget
-                elementum lorem volutpat ac. Aenean maximus augue ut tristique accumsan. Fusce fringilla hendrerit
-                tempus.
-                Nam venenatis molestie lectus, eget porttitor sapien. Morbi elementum consectetur tempus. Vestibulum
-                imperdiet at turpis a ultrices. Ut fermentum, lectus ac auctor lobortis, est ex luctus ligula, in
-                aliquet
-                sem ipsum eu ipsum. Aenean sed lacinia tellus. Maecenas consequat dapibus diam, nec congue orci
-                vulputate
-                eget. Sed condimentum ipsum auctor sollicitudin tempus. </p>
+                aliquet quam eu blandit. Donec fermentum diam non libero maximus convallis. Aenean aliquet diam sapien,
+                eget elementum lorem volutpat ac. Aenean maximus augue ut tristique accumsan. Fusce fringilla hendrerit
+                tempus. Nam venenatis molestie lectus, eget porttitor sapien. Morbi elementum consectetur tempus.
+                Vestibulum imperdiet at turpis a ultrices. Ut fermentum, lectus ac auctor lobortis, est ex luctus
+                ligula, in aliquet sem ipsum eu ipsum. Aenean sed lacinia tellus. Maecenas consequat dapibus diam, nec
+                congue orci
+                vulputate eget. Sed condimentum ipsum auctor sollicitudin tempus. </p>
             </div>
             <div class="small-10 small-offset-1 medium-7 medium-offset-1">
-              <div class="responsive-embed">
+              <div class="splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU">
+                      <img src="https://img.youtube.com/vi/cdz__ojQOuU/hqdefault.jpg">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="https://img.youtube.com/vi/3GNQL3alB-Y/hqdefault.jpg">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- <div class="responsive-embed">
                 <iframe
                   src="https://player.vimeo.com/video/1079623899?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                   frameborder="0"
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                   referrerpolicy="strict-origin-when-cross-origin" title="La Perra"></iframe>
               </div>
-              <script src="https://player.vimeo.com/api/player.js"></script>
+              <script src="https://player.vimeo.com/api/player.js"></script> -->
             </div>
           </div>
         </div>
@@ -68,7 +83,7 @@
       <div id="related-content">
         <div class="grid-container">
           <div class="grid-x grid-margin-x">
-            <div class="col5-unit">
+            <div class="small-10 small-offset-1 medium-3 medium-offset-0 cell">
               <a class="index-content-item" href="#">
                 <img src="https://placehold.co/600x400/333/FFF">
                 <div class="item-content text-center">
@@ -76,7 +91,7 @@
                 </div>
               </a>
             </div>
-            <div class="col5-unit">
+            <div class="small-10 small-offset-1 medium-3 medium-offset-0 cell">
               <a class="index-content-item" href="#">
                 <img src="https://placehold.co/600x400/333/FFF">
                 <div class="item-content text-center">
@@ -84,7 +99,7 @@
                 </div>
               </a>
             </div>
-            <div class="col5-unit">
+            <div class="small-10 small-offset-1 medium-3 medium-offset-0 cell">
               <a class="index-content-item" href="#">
                 <img src="https://placehold.co/600x400/333/FFF">
                 <div class="item-content text-center">
@@ -92,19 +107,11 @@
                 </div>
               </a>
             </div>
-            <div class="col5-unit">
+            <div class="small-10 small-offset-1 medium-3 medium-offset-0 cell">
               <a class="index-content-item" href="#">
                 <img src="https://placehold.co/600x400/333/FFF">
                 <div class="item-content text-center">
                   <h2>proyecto 4</h2>
-                </div>
-              </a>
-            </div>
-            <div class="col5-unit">
-              <a class="index-content-item" href="#">
-                <img src="https://placehold.co/600x400/333/FFF">
-                <div class="item-content text-center">
-                  <h2>proyecto 5</h2>
                 </div>
               </a>
             </div>
@@ -135,10 +142,6 @@
   <!--  FIN CONTENT -->
 
 
-
-
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.2.12/what-input.min.js"
     integrity="sha512-jdMp80Gf2e7K/JH3+mucRwyeRaqRPD+ykSpkmbBqxWMMCfEZEL9PF0zzF3JEgV4IVNj6eTjV8X41e7Gz5nNwyA=="
@@ -147,7 +150,30 @@
     integrity="sha512-P4f0g0iAkyfUF2V2VX8dxkoBxPLULaV2TM8HQGXFRb75AzLVAf+sn+MRweu/C81rL2JaYutbY6cWAbmwJbtOcg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+    integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js"
+    integrity="sha256-SOsIHtfQvDlbWUkfsmrKeeclGbL2ehwxEATrrdtWNhY=" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide('.splide', {
+        heightRatio: 0.5625,
+        cover: true,
+        updateOnMove: true,
+        pagination: false,
+        arrows: true,
+        width: '100%',
+        wheel: true,
+        gap: '1rem',
+        video: {
+          loop: true,
+        },
+      }).mount(window.splide.Extensions);
+    });
+  </script>
+
 </body>
 
 </html>
