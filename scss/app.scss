@@ -182,7 +182,13 @@ h1 {
     font-size: 2.5vw;
     text-transform: capitalize;
     letter-spacing: -1rem;
+    margin-bottom: $padding-default;
+    @include breakpoint(small only) { 
+        font-size: 2rem;
+    }
 }
+
+
 
 h2 {
     font-size: 1rem;
@@ -257,7 +263,7 @@ p {
         display: block;
         margin-bottom: 1rem;
         border-radius: 5px;
-        background: #rgba(255, 255, 255, 0);
+        background: rgba(255, 255, 255, 0);
         transition: all .1s ease-in-out;
 
         img {
