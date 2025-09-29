@@ -143,16 +143,20 @@ body#archive-editorial {
 
 body#archive-visual {
     background: $gris-medio;
-    // background-color: hsla(269, 0%, 100%, 1);
-    // background-image:
-    //     radial-gradient(at 65% 38%, hsla(157, 65%, 62%, 1) 0px, transparent 50%),
-    //     radial-gradient(at 5% 3%, hsla(47, 73%, 65%, 1) 0px, transparent 50%),
-    //     radial-gradient(at 7% 42%, hsla(16, 70%, 73%, 1) 0px, transparent 50%),
-    //     radial-gradient(at 53% 92%, hsla(10, 60%, 79%, 1) 0px, transparent 50%),
-    //     radial-gradient(at 38% 12%, hsla(247, 76%, 73%, 1) 0px, transparent 50%),
-    //     radial-gradient(at 77% 34%, hsla(237, 90%, 76%, 1) 0px, transparent 50%),
-    //     radial-gradient(at 98% 93%, hsla(144, 88%, 70%, 1) 0px, transparent 50%);
 }
+
+body#archive-identidad {
+    background-color: hsla(269, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 65% 38%, hsla(157, 65%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 5% 3%, hsla(47, 73%, 65%, 1) 0px, transparent 50%),
+        radial-gradient(at 7% 42%, hsla(16, 70%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 53% 92%, hsla(10, 60%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 38% 12%, hsla(247, 76%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 77% 34%, hsla(237, 90%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 98% 93%, hsla(144, 88%, 70%, 1) 0px, transparent 50%);
+}
+
 
 body#archive-vivo {
     background-color: hsla(47, 0%, 100%, 1);
@@ -261,7 +265,7 @@ p {
     .archive-content-item {
         height: 100%;
         display: block;
-        margin-bottom: 1rem;
+        margin-bottom: $padding-default;
         border-radius: 5px;
         background: rgba(255, 255, 255, 0);
         transition: all .1s ease-in-out;
@@ -283,7 +287,7 @@ p {
     .index-content-item:focus,
     .archive-content-item:hover,
     .archive-content-item:focus {
-        background: rgba(255, 255, 255, 1);
+        // background: rgba(255, 255, 255, 1);
 
         img {
             opacity: 1;
