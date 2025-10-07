@@ -94,15 +94,15 @@ body {
 }
 
 body#index {
-background-color:hsla(110,0%,100%,1);
-background-image:
-radial-gradient(at 33% 51%, hsla(61,84%,65%,1) 0px, transparent 50%),
-radial-gradient(at 29% 56%, hsla(356,99%,75%,1) 0px, transparent 50%),
-radial-gradient(at 16% 53%, hsla(249,84%,79%,1) 0px, transparent 50%),
-radial-gradient(at 80% 12%, hsla(345,79%,69%,1) 0px, transparent 50%),
-radial-gradient(at 44% 8%, hsla(39,66%,68%,1) 0px, transparent 50%),
-radial-gradient(at 70% 53%, hsla(340,94%,62%,1) 0px, transparent 50%),
-radial-gradient(at 10% 44%, hsla(139,69%,67%,1) 0px, transparent 50%);
+    background-color: hsla(110, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 33% 51%, hsla(61, 84%, 65%, 1) 0px, transparent 50%),
+        radial-gradient(at 29% 56%, hsla(356, 99%, 75%, 1) 0px, transparent 50%),
+        radial-gradient(at 16% 53%, hsla(249, 84%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 12%, hsla(345, 79%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 44% 8%, hsla(39, 66%, 68%, 1) 0px, transparent 50%),
+        radial-gradient(at 70% 53%, hsla(340, 94%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 10% 44%, hsla(139, 69%, 67%, 1) 0px, transparent 50%);
 }
 
 body#archive-av {
@@ -153,16 +153,16 @@ body#archive-montaje-expositivo {
         radial-gradient(at 2% 88%, hsla(223, 62%, 70%, 1) 0px, transparent 50%);
 }
 
-body#archive-visual{
-    background-color:hsla(244,0%,100%,1);
-background-image:
-radial-gradient(at 23% 39%, hsla(358,73%,64%,1) 0px, transparent 50%),
-radial-gradient(at 28% 29%, hsla(193,68%,71%,1) 0px, transparent 50%),
-radial-gradient(at 62% 53%, hsla(242,60%,65%,1) 0px, transparent 50%),
-radial-gradient(at 38% 65%, hsla(194,83%,77%,1) 0px, transparent 50%),
-radial-gradient(at 14% 67%, hsla(209,78%,67%,1) 0px, transparent 50%),
-radial-gradient(at 94% 4%, hsla(109,78%,67%,1) 0px, transparent 50%),
-radial-gradient(at 13% 98%, hsla(198,72%,67%,1) 0px, transparent 50%);
+body#archive-visual {
+    background-color: hsla(244, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 23% 39%, hsla(358, 73%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 28% 29%, hsla(193, 68%, 71%, 1) 0px, transparent 50%),
+        radial-gradient(at 62% 53%, hsla(242, 60%, 65%, 1) 0px, transparent 50%),
+        radial-gradient(at 38% 65%, hsla(194, 83%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 14% 67%, hsla(209, 78%, 67%, 1) 0px, transparent 50%),
+        radial-gradient(at 94% 4%, hsla(109, 78%, 67%, 1) 0px, transparent 50%),
+        radial-gradient(at 13% 98%, hsla(198, 72%, 67%, 1) 0px, transparent 50%);
 }
 
 body#archive-identidad {
@@ -216,7 +216,7 @@ h1 {
 
 
 h2 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 h3 {
@@ -250,9 +250,13 @@ p {
     background: white;
     font-weight: bolder;
 }
+.button-group{
+    display: inline-block;
+}
 
-.rounded {
+.rounded,.button-group {
     border-radius: 5px;
+    overflow: hidden;
 }
 
 
@@ -301,6 +305,7 @@ p {
 
         h2 {
             margin: 1rem 0 .5rem 0;
+            font-size: 1rem;
         }
     }
 
